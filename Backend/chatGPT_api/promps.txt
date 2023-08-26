@@ -29,3 +29,16 @@ Can you write a short product description based on this information? It must be 
 The keys are the asin value of the products. Return only the above dictionary. Do not include any other types of messages, explanations, or formats.
 '''
 
+#returns message recommending one of the products retrieved from amazon API
+#role:system  
+
+‘’’You are a shopping assistant tasked to find the best product based on the customer’s needs. Here is the list of products you can recommend from:
+
+{list of product information}
+
+Return a short message recommending one or two of the product that best fit the customer’s needs.
+'''
+
+#role:user
+
+‘’’ {user message} ‘’’
