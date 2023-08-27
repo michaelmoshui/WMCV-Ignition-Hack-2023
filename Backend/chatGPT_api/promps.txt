@@ -22,11 +22,55 @@ Try your best to give relevant recommendations based on past and new requirement
 
 #########ADD PRODUCT INFO HERE#########
 
-Can you write a short product description based on this information? It must be in the following format. 
+Can you add a short product description ("ai_description") for each product based on this information? 
+It must be in the following format.
 
-{‘ B09CKFYKWB’ : ‘product description for this product’ , ‘B01MF7056U’ :  ‘product description for this product’ }
+{
+    "products": {
+        "keyword1": [
+            {
+                "thumbnail": "https://m.media-amazon.com/images/I/51NzfmMfprL._AC_UY218_.jpg",
+                "title": "Microsoft - Xbox One S 500GB Console - White - ZQ9-00028 (Renewed)",
+                "url": "https://www.amazon.com/XBOX-500GB-Console-discontinued-Renewed/dp/B08FNP52TR/ref=sr_1_1?keywords=xbox+one&qid=1693095356&sr=8-1",
+                "ai_description": "This is a description of the product"
+            },
+            {
+                "thumbnail": "https://m.media-amazon.com/images/I/51NzfmMfprL._AC_UY218_.jpg",
+                "title": "Microsoft Xbox Series S 512GB Game All-Digital Console + 1 Xbox Wireless1 Controller, White - 1440p Gaming Resolution, 4K ...",
+                "url": "https://www.amazon.com/Microsoft-All-Digital-Console-Wireless1-Controller/dp/B09CKFYKWB/ref=sr_1_2?keywords=xbox+one&qid=1693095356&sr=8-2",
+                "ai_description": "This is a description of the product"
+            },
+            {
+                "thumbnail": "https://m.media-amazon.com/images/I/51NzfmMfprL._AC_UY218_.jpg",
+                "title": "Xbox One",
+                "url": "https://www.amazon.com/XBOX-500GB-Console-discontinued-Renewed/dp/B08FNP52TR/ref=sr_1_1?keywords=xbox+one&qid=1693095356&sr=8-1",
+                "ai_description": "This is a description of the product"
+            }
+        ],
+        "keyword2": [
+            {
+                "thumbnail": "https://m.media-amazon.com/images/I/51NzfmMfprL._AC_UY218_.jpg",
+                "title": "Microsoft - Xbox One S 500GB Console - White - ZQ9-00028 (Renewed)",
+                "url": "https://www.amazon.com/XBOX-500GB-Console-discontinued-Renewed/dp/B08FNP52TR/ref=sr_1_1?keywords=xbox+one&qid=1693095356&sr=8-1",
+                "ai_description": "This is a description of the product"
+            },
+            {
+                "thumbnail": "https://m.media-amazon.com/images/I/51NzfmMfprL._AC_UY218_.jpg",
+                "title": "Microsoft Xbox Series S 512GB Game All-Digital Console + 1 Xbox Wireless1 Controller, White - 1440p Gaming Resolution, 4K ...",
+                "url": "https://www.amazon.com/Microsoft-All-Digital-Console-Wireless1-Controller/dp/B09CKFYKWB/ref=sr_1_2?keywords=xbox+one&qid=1693095356&sr=8-2",
+                "ai_description": "This is a description of the product"
+            },
+            {
+                "thumbnail": "https://m.media-amazon.com/images/I/51NzfmMfprL._AC_UY218_.jpg",
+                "url": "https://www.amazon.com/Microsoft-All-Digital-Console-Wireless1-Controller/dp/B09CKFYKWB/ref=sr_1_2?keywords=xbox+one&qid=1693095356&sr=8-2",
+                "title": "Xbox One",
+                "ai_description": "This is a description of the product"
+            }
+        ]
+    }
+}
 
-The keys are the asin value of the products. Return only the above dictionary. Do not include any other types of messages, explanations, or formats.
+Return only the above json file. Do not include any other types of messages, explanations, or formats.
 '''
 
 #returns message recommending one of the products retrieved from amazon API
