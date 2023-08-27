@@ -1,0 +1,56 @@
+{
+    "products": {
+        "keyword1": [
+            {
+                "title": "Microsoft - Xbox One S 500GB Console - White - ZQ9-00028 (Renewed)",
+                "url": "https://www.amazon.com/XBOX-500GB-Console-discontinued-Renewed/dp/B08FNP52TR/ref=sr_1_1?keywords=xbox+one&qid=1693095356&sr=8-1",
+                "ai_description": "This is a description of the product"
+            },
+            {
+                "title": "Microsoft Xbox Series S 512GB Game All-Digital Console + 1 Xbox Wireless1 Controller, White - 1440p Gaming Resolution, 4K ...",
+                "url": "https://www.amazon.com/Microsoft-All-Digital-Console-Wireless1-Controller/dp/B09CKFYKWB/ref=sr_1_2?keywords=xbox+one&qid=1693095356&sr=8-2",
+                "ai_description": "This is a description of the product"
+            },
+            {
+                "thumbnail": "https://m.media-amazon.com/images/I/51NzfmMfprL._AC_UY218_.jpg",
+                "title": "Xbox One",
+                "ai_description": "This is a description of the product"
+            }
+        ],
+        "keyword2": [
+            {
+                "title": "Microsoft - Xbox One S 500GB Console - White - ZQ9-00028 (Renewed)",
+                "url": "https://www.amazon.com/XBOX-500GB-Console-discontinued-Renewed/dp/B08FNP52TR/ref=sr_1_1?keywords=xbox+one&qid=1693095356&sr=8-1",
+                "ai_description": "This is a description of the product"
+            },
+            {
+                "title": "Microsoft Xbox Series S 512GB Game All-Digital Console + 1 Xbox Wireless1 Controller, White - 1440p Gaming Resolution, 4K ...",
+                "url": "https://www.amazon.com/Microsoft-All-Digital-Console-Wireless1-Controller/dp/B09CKFYKWB/ref=sr_1_2?keywords=xbox+one&qid=1693095356&sr=8-2",
+                "ai_description": "This is a description of the product"
+            },
+            {
+                "url": "https://www.amazon.com/Microsoft-All-Digital-Console-Wireless1-Controller/dp/B09CKFYKWB/ref=sr_1_2?keywords=xbox+one&qid=1693095356&sr=8-2",
+                "title": "Xbox One",
+                "ai_description": "This is a description of the product"
+            }
+        ],
+        "keyword3": [
+            {
+                "title": "Microsoft - Xbox One S 500GB Console - White - ZQ9-00028 (Renewed)",
+                "url": "https://www.amazon.com/XBOX-500GB-Console-discontinued-Renewed/dp/B08FNP52TR/ref=sr_1_1?keywords=xbox+one&qid=1693095356&sr=8-1",
+                "ai_description": "This is a description of the product"
+            },
+            {
+                "title": "Microsoft Xbox Series S 512GB Game All-Digital Console + 1 Xbox Wireless1 Controller, White - 1440p Gaming Resolution, 4K ...",
+                "url": "https://www.amazon.com/Microsoft-All-Digital-Console-Wireless1-Controller/dp/B09CKFYKWB/ref=sr_1_2?keywords=xbox+one&qid=1693095356&sr=8-2",
+                "ai_description": "This is a description of the product"
+            },
+            {
+                "title": "Xbox One",
+                "url": "https://www.amazon.com/Microsoft-All-Digital-Console-Wireless1-Controller/dp/B09CKFYKWB/ref=sr_1_2?keywords=xbox+one&qid=1693095356&sr=8-2",
+                "ai_description": "This is a description of the product"
+            }
+        ]
+    },
+    "message": "This is the return text message to users"
+}
