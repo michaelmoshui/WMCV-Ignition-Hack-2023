@@ -34,9 +34,12 @@ The keys are the asin value of the products. Return only the above dictionary. D
 
 ‘’’You are a shopping assistant tasked to find the best product based on the customer’s needs. Here is the list of products you can recommend from:
 
-{list of product information}
+#########ADD PRODUCT INFO HERE#########
 
-Return a short message recommending one or two of the product that best fit the customer’s needs.
+Return a short message recommending one or two of the product that best fit the customer’s needs. Give only the name of the product and reason for recommendation. Limit the output to less than 100 words.
+
+User message: I want a good present for my 7 year old
+
 '''
 
 #role:user
