@@ -1,4 +1,4 @@
-async function product_search(search_keywords, number_of_products = 3) {
+async function product_search(search_keywords, number_of_products=3) {
     const amazonScraper = require('amazon-buddy');
     const results = [];
   
@@ -6,7 +6,7 @@ async function product_search(search_keywords, number_of_products = 3) {
       for (const keyword of search_keywords) {
         // Collect products for each keyword in the array
         const products = await amazonScraper.products({ keyword: keyword, number: number_of_products });
-  
+        console.log(products);
         // Ensure products is an array and contains items
         const info = products['result'];
         if (Array.isArray(info) && info.length > 0) {
