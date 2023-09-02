@@ -9,14 +9,14 @@ const LeftPage = ({ amazon }) => {
     for (let i = 0; i < amazon.length; i++) {
       for (let j = 0; j < amazon[i].length; j++) {
         for (let k = 0; k < amazon[i][j].length; k++) {
-          iniBooleans[amazon[i][j][k].asin] = false;
+          iniBooleans[amazon[i][j][k]?.asin] = false;
         }
       }
     }
   }, [amazon]);
 
   const [showItemDescription, setShowItemDescription] = useState(iniBooleans);
-  console.log(showItemDescription);
+
   return (
     <div className={styles.leftpage}>
       <div className={styles.logo}>
@@ -34,26 +34,31 @@ const LeftPage = ({ amazon }) => {
                       {keyword?.map((item, itemInd) => {
                         return (
                           <div key={itemInd} className={styles.item}>
-                            <h1>{`${item.price}`}</h1>
-                            <img src="https://img.freepik.com/free-photo/cute-ai-generated-cartoon-bunny_23-2150288883.jpg?w=2000"></img>
+                            <h1>{`${item?.title}`}</h1>
+                            <img
+                              src={`${item?.thumbnail}`}
+                              alt=""
+                              onClick={() => {
+                                window.open(`${item?.url}`, "_blank");
+                              }}
+                            ></img>
 
                             <button
                               className={styles.button1}
                               onClick={() => {
                                 setShowItemDescription({
                                   ...iniBooleans,
-                                  [item.asin]: true,
+                                  [item?.asin]: true,
                                 });
                               }}
                             >
                               View Item Description
                             </button>
-                            {showItemDescription[item.asin] && (
+                            {showItemDescription[item?.asin] && (
                               <ItemDescription
                                 item={item}
                                 iniBooleans={iniBooleans}
                                 setShowItemDescription={setShowItemDescription}
-                                ind={itemInd}
                                 showItemDescription={showItemDescription}
                               />
                             )}

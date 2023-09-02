@@ -21,8 +21,7 @@ export default function ItemDescription({
           <div className={styles.itemWrapper} ref={itemLoc}>
             <div className={styles.title}>{`${item?.title}`}</div>
             <div className={styles.line}></div>
-            <div className={styles.evaluation}>{`${item?.description}`}</div>
-            <div>{`${ind}`}</div>
+            <div className={styles.description}>{`${item?.description}`}</div>
           </div>
         </div>
       )}
